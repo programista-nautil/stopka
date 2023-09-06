@@ -1,0 +1,102 @@
+<style>
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        /* Odstępy wewnętrzne dla stopki */
+
+        /* Kolor tła stopki */
+        color: white;
+        /* Kolor tekstu */
+    }
+
+    .elementor-widget-container {
+        margin-bottom: 20px;
+    }
+
+    .footer-widget h5 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        padding: 0;
+    }
+
+    .contact-info li {
+        margin-bottom: 10px;
+    }
+
+    .contact-info .icon {
+        margin-right: 10px;
+    }
+
+    .elementor-social-icons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+        /* Dystans między ikonami */
+    }
+
+    .elementor-social-icons-wrapper a {
+        color: white;
+        /* Kolor ikon */
+        font-size: 24px;
+        /* Rozmiar ikon */
+        transition: color 0.3s ease;
+        /* Animacja przy najechaniu */
+    }
+
+    .elementor-social-icons-wrapper a:hover {
+        color: #007BFF;
+        /* Kolor ikon po najechaniu */
+    }
+
+    /* Odpowiednie odstępy dla elementów w stopce */
+    .elementor-col-50 {
+        padding: 0 20px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<script src="https://kit.fontawesome.com/031cba9a01.js" crossorigin="anonymous"></script>
+
+
+<div class="footer-wrapper">
+    <!-- Left Side - Logo -->
+    <div class="elementor-column elementor-col-50">
+        <!-- Logo -->
+        <div class="elementor-widget-container">
+            <img src="https://nautil.pl/wp-content/uploads/2021/02/nautil-bial.png"
+                alt="Ilustracja przedstawiajaca logo firmy Nautil" width="424" height="250">
+        </div>
+    </div>
+
+    <!-- Right Side - Contact Info and Social Media -->
+    <div class="elementor-column elementor-col-50">
+        <!-- Contact Information -->
+        <div class="footer-widget info-widget">
+            <div class="widget-content">
+                <h5>Kontakt</h5>
+                <ul class="contact-info m-0 list-unstyled">
+                    <li class="address"><span class="icon fas fa-map-pin"></span>Chrzanowskiego 2, 81-198 Kosakowo</li>
+                    <li class="address"><span class="icon fas fa-phone-alt"></span><a href="tel:530262005">530 262
+                            005</a></li>
+                    <li class="address"><span class="icon fas fa-envelope"></span><a
+                            href="mailto:biuro@nautil.pl">biuro@nautil.pl</a></li>
+                    <li class="address"><a href="/polityka-prywatnosci/"> Polityka prywatności</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="elementor-widget-container">
+            <div class="elementor-social-icons-wrapper">
+                <a href="https://pl-pl.facebook.com/nautilpl/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/c/nautilpl" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://pl.linkedin.com/company/nautilpl" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
