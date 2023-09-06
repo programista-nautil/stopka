@@ -1,7 +1,7 @@
 <style>
     .footer-wrapper {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
         /* Odstępy wewnętrzne dla stopki */
@@ -13,6 +13,10 @@
 
     .elementor-widget-container {
         margin-bottom: 20px;
+    }
+
+    .footer-wrapper p {
+        color: white;
     }
 
     .footer-widget h5 {
@@ -71,6 +75,7 @@
             <img src="https://nautil.pl/wp-content/uploads/2021/02/nautil-bial.png"
                 alt="Ilustracja przedstawiajaca logo firmy Nautil" width="424" height="250">
         </div>
+
         <div class="elementor-widget-container">
             <div class="elementor-social-icons-wrapper">
                 <a href="https://pl-pl.facebook.com/nautilpl/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -78,6 +83,17 @@
                 <a href="https://pl.linkedin.com/company/nautilpl" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
+    </div>
+    <div>
+        <p>Nautil Sp. z o.o.</p>
+        <p>NIP: 5871738680</p>
+        <p>REGON: 524096454</p>
+        <p>KRS: 0001010773</p>
+        <p>E-mail:
+            <a href="mailto: biuro@nautil.pl">biuro@nautil.pl</a>
+        </p>
+        <p>tel. 507 140 847</p>
+        <p>tel. 530 262 005</p>
     </div>
 
     <!-- Right Side - Contact Info and Social Media -->
@@ -98,6 +114,24 @@
         </div>
 
         <!-- Social Media Icons -->
-        
+
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div id="privacyPolicyContainer"></div>
+
+<script>
+    jQuery.ajax({
+        url: "https://programista-nautil.github.io/PolitykaPrywatnosci/",
+        type: "GET",
+        dataType: "html",
+        success: function (data) {
+            jQuery("#privacyPolicyContainer").html(data);
+        },
+        error: function (error) {
+            console.log("Wystąpił błąd podczas ładowania Polityki Prywatności:", error);
+        }
+    });
+</script>
