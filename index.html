@@ -118,21 +118,3 @@
 
     </div>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<div id="privacyPolicyContainer"></div>
-
-<script>
-    jQuery.ajax({
-        url: "https://programista-nautil.github.io/stopka/",
-        type: "GET",
-        dataType: "html",
-        success: function (data) {
-            jQuery("#privacyPolicyContainer").html(data);
-        },
-        error: function (error) {
-            console.log("Wystąpił błąd podczas ładowania Stopki:", error);
-        }
-    });
-</script>
